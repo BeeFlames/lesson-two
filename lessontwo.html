@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/lessontwo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav>
+      <img class="logo" src="IMAGES/mbe-1.jpg" alt="logo">
+      <a class="home" href="#">Home</a>
+      <a class="about" href="#">About Us</a>
+      <a class="services" href="#">Our Services</a>
+      <button class="butt">Contact Us</button>
+  </nav>
+  
+  <div class="section" style="margin-top: 200px;">
+    <div class="dob_section">
+      <p> <input type="date" class="dob"> </p>
+      <button type="button" class="dob_btn"> Calc </button>
+    </div>
+    <p><span class="display"></span></p>
+  </div>
+
+  <div class="signup__section bg-info p-4 border my-4 w-50">
+    <form action="./signup.php" class="signup" id="signup" name="signup_form" method="post">
+         <div class="form-floating mb-3">
+           <input type="text" class="form-control" name="username" id="username" placeholder="username" required />
+           <label for="username">Username</label>
+         </div>
+
+         <div class="form-floating mb-3">
+           <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required />
+           <label for="email">Email Address</label>
+         </div>
+
+         <div class="form-floating mb-3">
+           <input type="password" class="form-control" id="password" placeholder="Password" required />
+           <label for="password">Password</label>
+         </div>
+
+         <div class="form-floating mb-3">
+          <select class="form-control" name="userType" id="userType" required>
+            <option>Select User Type</option>
+            <option value="ADMIN">Admin</option>
+            <option value="USER">User</option>
+            <option value="THIRD PARTY">Third Party</option>
+          </select>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" step="5" min="10" max="250" name="num" id="num" placeholder="Number of seat" required />
+            <label for="num">Number of Seat</label>
+          </div>
+
+         <button type="submit" class="btn btn-primary btn-lg mx-auto my-4">SignUp</button>
+
+    </form>
+</div>
+
+
+
+<!-- LOGIN SECTION -->
+<div class="login__section bg-warning p-4 border my-4 w-50">
+
+   <form action="" class="login" id="login" name="login_form">
+       <div class="form-floating mb-3">
+         <input type="text" class="form-control" name="login__username" id="login__username" placeholder="username or email"  required/>
+         <label for="login__username">Username/Email</label>
+       </div> 
+       <div class="form-floating">
+         <input type="password" class="form-control" name="email" id="login_password" placeholder="Password" required />
+         <label for="login_password">Password</label>
+       </div>
+
+       <button type="submit" class="btn btn-primary btn-lg mx-auto my-4">Login</button>
+  </form>
+</div>
+
+
+  <script src="lessontwo.js"></script>
+</body>
+</html>
