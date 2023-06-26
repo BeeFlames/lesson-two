@@ -1,0 +1,112 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body{
+  background: url('../images/beach sand');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav{
+  height: 60px;
+  width: 100%;
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.logo{
+  width: 120px;
+}
+
+.home,
+.about,
+.services{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 0;
+  background-color: rgb(7, 150, 26);
+  border-right: 2px solid red;
+  color: whitesmoke;
+  height: 40px;
+  width: 130px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.home{
+  margin-left: auto;
+}
+
+a:hover{
+  cursor: pointer;
+  background-color: black;
+  color: rgb(7, 150, 26);
+  text-decoration: underline red;
+}
+.butt{
+  margin-left: 10px;
+  background-color: black;
+  padding: 7px;
+  border-radius: 8px;
+  margin-right: 5px;
+  border: none;
+  color: rgb(7, 150, 26);
+  font-size: 18px;
+  cursor: pointer;
+  height: 40px;
+  width: 130px;
+  font-weight: bold;
+}
+
+.butt:hover{
+  opacity: 0.7;
+}
+
+.section{
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: azure;
+  width: 80%;
+}
+
+.dob_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dob, .dob_btn{
+  padding: 14px 18px;
+  cursor: pointer;
+}
+
+.dob_btn:hover{
+  background-color: black;
+  color: white
+}
+
+.display{
+  background-color: rgb(19, 17, 13);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+p{
+  text-align: center;
+}
